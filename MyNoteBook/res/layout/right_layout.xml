@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.magee.mynotebook.customview.MyLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="320dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@drawable/notebackground"
+    android:orientation="vertical" >
+
+    <com.magee.mynotebook.customview.MyTextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/drawer_title" />
+
+    <View style="@style/drawer_item_view_attr" />
+
+    <com.magee.mynotebook.customview.MyLinearLayout
+        android:id="@+id/insert_text"
+        style="@style/drawer_item_layout_attr" >
+
+        <ImageView
+            style="@style/drawer_item_image_attr"
+            android:src="@drawable/text" />
+
+        <com.magee.mynotebook.customview.MyTextView
+            style="@style/drawer_item_text_attr"
+            android:text="@string/text" />
+    </com.magee.mynotebook.customview.MyLinearLayout>
+
+    <View style="@style/drawer_item_view_attr" />
+
+    <com.magee.mynotebook.customview.MyLinearLayout
+        android:id="@+id/insert_img"
+        style="@style/drawer_item_layout_attr" >
+
+        <ImageView
+            style="@style/drawer_item_image_attr"
+            android:src="@drawable/image" />
+
+        <com.magee.mynotebook.customview.MyTextView
+            style="@style/drawer_item_text_attr"
+            android:text="@string/image" />
+    </com.magee.mynotebook.customview.MyLinearLayout>
+
+    <View style="@style/drawer_item_view_attr" />
+
+    <com.magee.mynotebook.customview.MyLinearLayout
+        android:id="@+id/insert_video"
+        style="@style/drawer_item_layout_attr" >
+
+        <ImageView
+            style="@style/drawer_item_image_attr"
+            android:src="@drawable/video" />
+
+        <com.magee.mynotebook.customview.MyTextView
+            style="@style/drawer_item_text_attr"
+            android:text="@string/video" />
+    </com.magee.mynotebook.customview.MyLinearLayout>
+
+    <View style="@style/drawer_item_view_attr" />
+
+    <com.magee.mynotebook.customview.MyLinearLayout
+        android:id="@+id/setting"
+        style="@style/drawer_item_layout_attr" >
+
+        <ImageView
+            style="@style/drawer_item_image_attr"
+            android:src="@drawable/setting" />
+
+        <com.magee.mynotebook.customview.MyTextView
+            style="@style/drawer_item_text_attr"
+            android:text="@string/setting" />
+    </com.magee.mynotebook.customview.MyLinearLayout>
+
+    <View style="@style/drawer_item_view_attr" />
+
+    <com.magee.mynotebook.customview.MyLinearLayout
+        android:id="@+id/exit"
+         style="@style/drawer_item_layout_attr" >
+
+        <ImageView
+            style="@style/drawer_item_image_attr"
+            android:src="@drawable/exit" />
+
+        <com.magee.mynotebook.customview.MyTextView
+            
+            style="@style/drawer_item_text_attr"
+            android:text="@string/exit" />
+    </com.magee.mynotebook.customview.MyLinearLayout>
+
+    <View style="@style/drawer_item_view_attr" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+</com.magee.mynotebook.customview.MyLinearLayout>
